@@ -1,5 +1,12 @@
 # Web3Auth x Auth0 Demo Application
 
+## Quick Start
+
+```bash
+git clone https://github.com/shahbaz17/web3auth-auth0-react-demo.git
+cd web3auth-auth0-react-demo
+```
+
 ## Installation
 
 Run:
