@@ -267,9 +267,6 @@ function App() {
 				>
 					Source code
 				</a>
-				<p>
-					Note: For testing, SMS login only works with +65 and +91 numbers.{' '}
-				</p>
 			</footer>
 		</div>
 	);
