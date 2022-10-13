@@ -36,7 +36,7 @@ function App() {
 						loginConfig: {
 							jwt: {
 								name: 'Web3Auth-Auth0-JWT',
-								verifier: 'web3auth-auth0-alam',
+								verifier: 'web3auth-auth0-alam', // [web3auth-auth0-sms, web3auth-auth0-alam]
 								typeOfLogin: 'jwt',
 								clientId: '294QRkchfq2YaXUbPri7D6PH7xzHgQMT',
 							},
@@ -66,11 +66,10 @@ function App() {
 		const web3authProvider = await web3auth.connectTo(
 			WALLET_ADAPTERS.OPENLOGIN,
 			{
-				relogin: true,
 				loginProvider: 'jwt',
 				extraLoginOptions: {
 					domain: 'https://shahbaz-torus.us.auth0.com',
-					verifierIdField: 'sub',
+					verifierIdField: 'sub', // [sub, name]
 				},
 			},
 		);
